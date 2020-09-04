@@ -1,16 +1,28 @@
+#[allow(dead_code)]
+fn another_function(x: i32, y: i32) {
+    println!("The value of x is: {}", x);
+    println!("The value of y is: {}", y);
+}
+
+#[allow(dead_code)]
+fn plus_one(x: i32) -> i32 {
+    x + 1
+}
+
+#[allow(dead_code)]
+fn five() -> i32 {
+    5
+}
+
 fn main() {
-    let sum = 5 + 10;
+    let a = [10, 20, 30, 40, 50];
 
-    let diff = 95.5 - 4.3;
+    for element in a.iter() {
+        println!("the value is: {}", element);
+    }
 
-    let product = 4 * 30;
-
-    let rem = 43 % 5;
-
-    let t = true;
-
-    dbg!(sum, diff, product, rem, t);
-
-    let tup: (i32, f64, u8) = (500, 6.4, 1);
-    dbg!(tup);
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
 }
