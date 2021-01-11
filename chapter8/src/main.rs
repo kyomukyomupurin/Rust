@@ -5,7 +5,7 @@ enum SpreadsheetCell {
     Float(f64),
     Text(String),
 }
-
+#[allow(dead_code)]
 fn main() {
 /*
     let mut v = vec![1, 2, 3, 4, 5];

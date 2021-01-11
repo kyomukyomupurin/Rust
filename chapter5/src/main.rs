@@ -47,6 +47,7 @@ fn area(rectangle: &Rectangle) -> u32 {
 }
 */
 
+#[allow(dead_code)]
 impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
